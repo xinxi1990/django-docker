@@ -26,6 +26,23 @@ python2.7 manage.py runserver 0.0.0.0:8000
 
 deactivate
 
+
+# libs
+=============
+
+create dependent libs
+
+pip install pipreqs
+
+pip freeze > requirements.txt
+
+
+install dependent libs
+
+pip install -r requirements.txt
+
+
+
 mysql
 =============
 
