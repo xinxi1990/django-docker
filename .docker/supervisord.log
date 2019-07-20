@@ -1,0 +1,11 @@
+2019-07-19 13:57:01,259 INFO supervisord started with pid 95749
+2019-07-19 13:57:02,263 INFO spawned: 'app' with pid 95754
+2019-07-19 13:57:02,271 INFO exited: app (exit status 127; not expected)
+2019-07-19 13:57:03,278 INFO spawned: 'app' with pid 95757
+2019-07-19 13:57:03,284 INFO exited: app (exit status 127; not expected)
+2019-07-19 13:57:05,294 INFO spawned: 'app' with pid 95766
+2019-07-19 13:57:05,298 INFO exited: app (exit status 127; not expected)
+2019-07-19 13:57:08,309 INFO spawned: 'app' with pid 95773
+2019-07-19 13:57:08,314 INFO exited: app (exit status 127; not expected)
+2019-07-19 13:57:09,316 INFO gave up: app entered FATAL state, too many start retries too quickly
+2019-07-19 13:57:56,201 WARN received SIGINT indicating exit request

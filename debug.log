@@ -1,0 +1,96 @@
+DEBUG 2019-07-20 04:12:33,869 (0.065) INSERT INTO `t_android` (`name`, `age`) VALUES ('allen', 10); args=['allen', 10]
+ERROR 2019-07-20 04:12:33,939 Internal Server Error: /polls/add
+Traceback (most recent call last):
+  File "/Users/xinxi/Desktop/django-docker/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xinxi/Desktop/django-docker/venv/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xinxi/Desktop/django-docker/polls/views.py", line 55, in android_add
+    resp = AnroidServer().add_android(parames)
+  File "/Users/xinxi/Desktop/django-docker/polls/servers/android_server.py", line 32, in add_android
+    logger.info(self.class_name + result)
+NameError: global name 'logger' is not defined
+DEBUG 2019-07-20 04:12:57,828 (0.051) INSERT INTO `t_android` (`name`, `age`) VALUES ('allen', 10); args=['allen', 10]
+ERROR 2019-07-20 04:12:57,889 Internal Server Error: /polls/add
+Traceback (most recent call last):
+  File "/Users/xinxi/Desktop/django-docker/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xinxi/Desktop/django-docker/venv/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xinxi/Desktop/django-docker/polls/views.py", line 55, in android_add
+    resp = AnroidServer().add_android(parames)
+  File "/Users/xinxi/Desktop/django-docker/polls/servers/android_server.py", line 33, in add_android
+    logger.info(self.class_name + result)
+NameError: global name 'logger' is not defined
+DEBUG 2019-07-20 04:13:09,610 (0.039) INSERT INTO `t_android` (`name`, `age`) VALUES ('allen', 10); args=['allen', 10]
+ERROR 2019-07-20 04:13:09,679 Internal Server Error: /polls/add
+Traceback (most recent call last):
+  File "/Users/xinxi/Desktop/django-docker/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xinxi/Desktop/django-docker/venv/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xinxi/Desktop/django-docker/polls/views.py", line 55, in android_add
+    resp = AnroidServer().add_android(parames)
+  File "/Users/xinxi/Desktop/django-docker/polls/servers/android_server.py", line 33, in add_android
+    logger.info(self.class_name + result)
+NameError: global name 'logger' is not defined
+DEBUG 2019-07-20 04:13:35,424 (0.041) INSERT INTO `t_android` (`name`, `age`) VALUES ('allen', 10); args=['allen', 10]
+ERROR 2019-07-20 04:13:35,489 Internal Server Error: /polls/add
+Traceback (most recent call last):
+  File "/Users/xinxi/Desktop/django-docker/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xinxi/Desktop/django-docker/venv/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xinxi/Desktop/django-docker/polls/views.py", line 55, in android_add
+    resp = AnroidServer().add_android(parames)
+  File "/Users/xinxi/Desktop/django-docker/polls/servers/android_server.py", line 34, in add_android
+    logger.info(self.class_name + result)
+UnboundLocalError: local variable 'result' referenced before assignment
+DEBUG 2019-07-20 04:14:12,386 (0.032) INSERT INTO `t_android` (`name`, `age`) VALUES ('allen', 10); args=['allen', 10]
+INFO 2019-07-20 04:14:12,417 AnroidServer8
+INFO 2019-07-20 04:14:12,417 AnroidServer{'msg': '\xe6\xb7\xbb\xe5\x8a\xa0\xe6\x88\x90\xe5\x8a\x9f', 'code': '1'}
+INFO 2019-07-20 04:19:02,006 AnroidServerManager isn't accessible via AndroidModels instances
+INFO 2019-07-20 04:19:02,006 AnroidServer{'msg': '\xe6\xb7\xbb\xe5\x8a\xa0\xe5\xa4\xb1\xe8\xb4\xa5', 'code': '10000'}
+INFO 2019-07-20 04:19:34,673 AnroidServer'AndroidModels' object has no attribute 'get'
+INFO 2019-07-20 04:19:34,673 AnroidServer{'msg': '\xe6\xb7\xbb\xe5\x8a\xa0\xe5\xa4\xb1\xe8\xb4\xa5', 'code': '10000'}
+DEBUG 2019-07-20 04:20:16,278 (0.049) SELECT `t_android`.`id`, `t_android`.`name`, `t_android`.`age` FROM `t_android` WHERE `t_android`.`name` = 'allen' ; args=('allen',)
+INFO 2019-07-20 04:20:16,279 AnroidServerget() returned more than one AndroidModels -- it returned 6!
+INFO 2019-07-20 04:20:16,279 AnroidServer{'msg': '\xe6\xb7\xbb\xe5\x8a\xa0\xe5\xa4\xb1\xe8\xb4\xa5', 'code': '10000'}
+DEBUG 2019-07-20 04:20:45,271 (0.033) SELECT `t_android`.`id`, `t_android`.`name`, `t_android`.`age` FROM `t_android` WHERE `t_android`.`name` = 'allen' ; args=('allen',)
+INFO 2019-07-20 04:20:45,271 AnroidServerget() returned more than one AndroidModels -- it returned 6!
+INFO 2019-07-20 04:20:45,271 AnroidServer{'msg': '\xe6\xb7\xbb\xe5\x8a\xa0\xe5\xa4\xb1\xe8\xb4\xa5', 'code': '10000'}
+INFO 2019-07-20 04:21:02,041 AnroidServerglobal name 'arames' is not defined
+INFO 2019-07-20 04:21:02,041 AnroidServer{'msg': '\xe6\xb7\xbb\xe5\x8a\xa0\xe5\xa4\xb1\xe8\xb4\xa5', 'code': '10000'}
+DEBUG 2019-07-20 04:21:11,474 (0.048) SELECT `t_android`.`id`, `t_android`.`name`, `t_android`.`age` FROM `t_android` WHERE `t_android`.`name` = 'allen' ; args=('allen',)
+INFO 2019-07-20 04:21:11,474 AnroidServerget() returned more than one AndroidModels -- it returned 6!
+INFO 2019-07-20 04:21:11,475 AnroidServer{'msg': '\xe6\xb7\xbb\xe5\x8a\xa0\xe5\xa4\xb1\xe8\xb4\xa5', 'code': '10000'}
+DEBUG 2019-07-20 04:21:29,478 (0.034) SELECT `t_android`.`id`, `t_android`.`name`, `t_android`.`age` FROM `t_android` WHERE `t_android`.`name` = 'allen' ; args=('allen',)
+INFO 2019-07-20 04:21:29,478 AnroidServerget() returned more than one AndroidModels -- it returned 6!
+INFO 2019-07-20 04:21:29,478 AnroidServer{'msg': '\xe6\xb7\xbb\xe5\x8a\xa0\xe5\xa4\xb1\xe8\xb4\xa5', 'code': '10000'}
+INFO 2019-07-20 04:23:31,355 AnroidServerglobal name 'models' is not defined
+INFO 2019-07-20 04:23:31,355 AnroidServer{'msg': '\xe6\xb7\xbb\xe5\x8a\xa0\xe5\xa4\xb1\xe8\xb4\xa5', 'code': '10000'}
+INFO 2019-07-20 04:24:26,456 AnroidServer'module' object has no attribute 'AndroidModels'
+INFO 2019-07-20 04:24:26,456 AnroidServer{'msg': '\xe6\xb7\xbb\xe5\x8a\xa0\xe5\xa4\xb1\xe8\xb4\xa5', 'code': '10000'}
+DEBUG 2019-07-20 04:25:00,390 (0.032) INSERT INTO `t_android` (`name`, `age`) VALUES ('allen', 100); args=['allen', 100]
+INFO 2019-07-20 04:25:00,435 AnroidServer9
+INFO 2019-07-20 04:25:00,436 AnroidServer{'msg': '\xe6\xb7\xbb\xe5\x8a\xa0\xe6\x88\x90\xe5\x8a\x9f', 'code': '1'}
+DEBUG 2019-07-20 04:25:43,280 (0.032) INSERT INTO `t_android` (`name`, `age`) VALUES ('allen', 1000); args=['allen', 1000]
+INFO 2019-07-20 04:25:43,316 AnroidServer10
+INFO 2019-07-20 04:25:43,317 AnroidServer{'msg': '\xe6\xb7\xbb\xe5\x8a\xa0\xe6\x88\x90\xe5\x8a\x9f', 'code': '1'}
+DEBUG 2019-07-20 04:27:39,055 (0.033) INSERT INTO `t_android` (`name`, `age`) VALUES ('allen', 1000); args=['allen', 1000]
+INFO 2019-07-20 04:27:39,104 AnroidServer11
+INFO 2019-07-20 04:27:39,104 AnroidServer{'msg': '\xe6\x9b\xb4\xe6\x96\xb0\xe6\x88\x90\xe5\x8a\x9f', 'code': '1'}
+DEBUG 2019-07-20 04:27:48,375 (0.031) INSERT INTO `t_android` (`name`, `age`) VALUES ('allen', 1000); args=['allen', 1000]
+INFO 2019-07-20 04:27:48,407 AnroidServer12
+INFO 2019-07-20 04:27:48,407 AnroidServer{'msg': '\xe6\x9b\xb4\xe6\x96\xb0\xe6\x88\x90\xe5\x8a\x9f', 'code': '1'}
+DEBUG 2019-07-20 04:28:02,545 (0.039) INSERT INTO `t_android` (`name`, `age`) VALUES ('allen', 1000); args=['allen', 1000]
+INFO 2019-07-20 04:28:02,578 AnroidServer13
+INFO 2019-07-20 04:28:02,578 AnroidServer{'msg': '\xe6\x9b\xb4\xe6\x96\xb0\xe6\x88\x90\xe5\x8a\x9f', 'code': '1'}
+INFO 2019-07-20 04:28:17,405 AnroidServer'AndroidModels' object has no attribute 'all'
+INFO 2019-07-20 04:28:17,406 AnroidServer{'msg': '\xe5\x88\xa0\xe9\x99\xa4\xe5\xa4\xb1\xe8\xb4\xa5', 'code': '10000'}
+INFO 2019-07-20 04:28:32,664 AnroidServerAndroidModels object can't be deleted because its id attribute is set to None.
+INFO 2019-07-20 04:28:32,664 AnroidServer{'msg': '\xe5\x88\xa0\xe9\x99\xa4\xe5\xa4\xb1\xe8\xb4\xa5', 'code': '10000'}
+INFO 2019-07-20 04:29:00,129 AnroidServerAndroidModels object can't be deleted because its id attribute is set to None.
+INFO 2019-07-20 04:29:00,129 AnroidServer{'msg': '\xe5\x88\xa0\xe9\x99\xa4\xe5\xa4\xb1\xe8\xb4\xa5', 'code': '10000'}
+DEBUG 2019-07-20 04:29:18,996 (0.030) DELETE FROM `t_android` WHERE `id` IN (1); args=(1,)
+INFO 2019-07-20 04:29:19,046 AnroidServer{'msg': '\xe5\x88\xa0\xe9\x99\xa4\xe6\x88\x90\xe5\x8a\x9f', 'code': '1'}

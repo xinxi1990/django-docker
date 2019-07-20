@@ -1,0 +1,95 @@
+{
+	"id": "025675fc-c8f6-49c4-917b-5e5cb82dfb9f",
+	"name": "django_test",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"394e280e-817e-4f12-83a5-206f8884ab1d",
+		"7d9a1028-1263-4f60-9c68-a6185c8ce194",
+		"2715d033-e060-4c1f-b85b-c2f35c57c592"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "2715d033-e060-4c1f-b85b-c2f35c57c592",
+			"name": "http://0.0.0.0:8000/polls/add",
+			"url": "http://0.0.0.0:8000/polls/update",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\"name\":\"allen\",\"age\":10}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "394e280e-817e-4f12-83a5-206f8884ab1d",
+			"name": "http://0.0.0.0:8000/polls/add",
+			"url": "http://0.0.0.0:8000/polls/update",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\"name\":\"allen\",\"age\":10}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7d9a1028-1263-4f60-9c68-a6185c8ce194",
+			"name": "http://0.0.0.0:8000/polls/del",
+			"url": "http://0.0.0.0:8000/polls/del",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\"name\":\"allen\",\"age\":1000}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
